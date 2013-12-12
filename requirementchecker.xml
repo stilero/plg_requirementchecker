@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>System - requirementChecker</name>
+	<author>Daniel Eliasson - joomla at stilero.com</author>
+	<creationDate>2012-jul-22</creationDate>
+	<copyright>Copyright (c) 2012-jul-22 Stilero Webdesign http://www.stilero.com. All rights reserved.</copyright>
+	<authorEmail>joomla@stilero.com</authorEmail>
+	<authorUrl>www.stilero.com</authorUrl>
+	<version>1.1</version>
+	<license>GPLv2</license>
+	<description>Description</description>
+	<files>
+		<filename plugin="requirementchecker">requirementchecker.php</filename>
+                <folder>requirementchecker</folder>
+	</files>
+	<languages folder="language">
+            <language tag="en-GB">en-GB.plg_system_requirementchecker.ini</language>
+            <language tag="en-GB">en-GB.plg_system_requirementchecker.sys.ini</language>
+        </languages>
+	<!-- Standard plugin parameters for Joomla! 1.5 -->	
+	<params addpath="/plugins/system/requirementchecker/elements">
+		<param name="curlsupport" 
+                    type="curlsupport"  
+                    label="PLG_SYSTEM_REQUIREMENTCHECKER_ELEMENTS_CURLSUPPORT_LABEL" 
+                    description="PLG_SYSTEM_REQUIREMENTCHECKER_ELEMENTS_CURLSUPPORT_DESC"
+                />
+                <param name="curltest" 
+                    type="curltest"  
+                    label="PLG_SYSTEM_REQUIREMENTCHECKER_ELEMENTS_CURLTEST_LABEL" 
+                    description="PLG_SYSTEM_REQUIREMENTCHECKER_ELEMENTS_CURLTEST_DESC"
+                />
+                <param name="jsonsupport" 
+                    type="jsonsupport"  
+                    label="PLG_SYSTEM_REQUIREMENTCHECKER_ELEMENTS_JSONSUPPORT_LABEL" 
+                    description="PLG_SYSTEM_REQUIREMENTCHECKER_ELEMENTS_JSONSUPPORT_DESC"
+                />
+	</params>
+	<!-- Standard plugin parameters for Joomla! 1.6+ -->
+        <config>
+            <fields name="params">
+                <fieldset name="settings" label="PLG_SYSTEM_REQUIREMENTCHECKER_SETTINGS" addfieldpath="/plugins/system/requirementchecker/requirementchecker/elements">
+                    <field name="curlsupport" 
+                        type="curlsupport"  
+                        label="PLG_SYSTEM_REQUIREMENTCHECKER_ELEMENTS_CURLSUPPORT_LABEL" 
+                        description="PLG_SYSTEM_REQUIREMENTCHECKER_ELEMENTS_CURLSUPPORT_DESC"
+                    />
+                    <field name="curltest" 
+                        type="curltest"  
+                        label="PLG_SYSTEM_REQUIREMENTCHECKER_ELEMENTS_CURLTEST_LABEL" 
+                        description="PLG_SYSTEM_REQUIREMENTCHECKER_ELEMENTS_CURLTEST_DESC"
+                    />
+                    <field name="jsonsupport" 
+                        type="jsonsupport"  
+                        label="PLG_SYSTEM_REQUIREMENTCHECKER_ELEMENTS_JSONSUPPORT_LABEL" 
+                        description="PLG_SYSTEM_REQUIREMENTCHECKER_ELEMENTS_JSONSUPPORT_DESC"
+                    />
+                </fieldset>
+            </fields>
+        </config>
+</install>
